@@ -1,96 +1,104 @@
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
+  background: #f7f3ee;
   color: #333;
-  background: #f8f5f0;
   text-align: center;
 }
 
 /* HERO */
 .hero {
-  background: url('images/bg.jpg') center/cover no-repeat;
-  height: 100vh;
+  padding: 100px 20px;
+}
+
+.floral-circle {
+  width: 260px;
+  height: 260px;
+  border: 2px solid #c8a97e;
+  border-radius: 50%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.overlay {
-  background: rgba(255,255,255,0.85);
-  padding: 40px;
-  border-radius: 10px;
+.floral-circle::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: url('https://i.ibb.co/7QpKsCX/floral.png') no-repeat center;
+  background-size: contain;
+  z-index: -1;
 }
 
-.hero h1 {
+.floral-circle h1 {
   font-family: 'Great Vibes', cursive;
-  font-size: 50px;
-  margin: 10px 0;
+  font-size: 40px;
 }
 
-.hero h2 {
-  margin: 5px;
-}
-
-.hero h3 {
+.tag {
+  margin-top: 20px;
   letter-spacing: 2px;
   font-size: 14px;
 }
 
-/* SECTIONS */
-.section {
-  padding: 70px 20px;
+/* INVITE */
+.invite {
+  padding: 60px 20px;
 }
 
-.light {
+.date h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+/* VENUE */
+.venue {
   background: #fff;
+  padding: 60px 20px;
 }
 
-h2 {
-  margin-bottom: 20px;
-}
-
-/* BUTTON */
-.btn {
+.venue a {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  border: 1px solid #c9a77c;
+  border: 1px solid #c8a97e;
   text-decoration: none;
   color: #333;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  background: #c9a77c;
+.venue a:hover {
+  background: #c8a97e;
   color: white;
 }
 
-/* GALLERY */
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+/* EVENT */
+.event {
+  padding: 60px 20px;
 }
 
-.gallery img {
+/* CONTACT */
+.contact {
+  padding: 80px 20px;
+}
+
+.circle {
+  border: 2px solid #c8a97e;
+  border-radius: 50%;
   width: 250px;
-  border-radius: 15px;
-}
-
-/* FOOTER */
-footer {
-  padding: 20px;
-  font-size: 14px;
+  height: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* MOBILE */
-@media(max-width: 768px) {
-  .hero h1 {
-    font-size: 35px;
-  }
-
-  .gallery img {
-    width: 90%;
+@media(max-width:768px){
+  .floral-circle {
+    width: 200px;
+    height: 200px;
   }
 }
