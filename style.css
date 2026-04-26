@@ -1,104 +1,110 @@
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background: #f7f3ee;
-  color: #333;
+  background: linear-gradient(#fffaf6, #f7f3ee);
   text-align: center;
+  color: #444;
+}
+
+/* FLORAL TOP */
+.top-floral {
+  background: url('https://i.ibb.co/7QpKsCX/floral.png') no-repeat top center;
+  background-size: contain;
+  height: 180px;
 }
 
 /* HERO */
 .hero {
-  padding: 100px 20px;
+  padding: 40px 20px;
 }
 
-.floral-circle {
-  width: 260px;
-  height: 260px;
-  border: 2px solid #c8a97e;
-  border-radius: 50%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.floral-circle::before {
-  content: "";
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background: url('https://i.ibb.co/7QpKsCX/floral.png') no-repeat center;
-  background-size: contain;
-  z-index: -1;
-}
-
-.floral-circle h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 40px;
-}
-
-.tag {
-  margin-top: 20px;
+.small {
   letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 55px;
+  color: #c59d5f;
+}
+
+.names span {
+  font-size: 30px;
+}
+
+.invite {
+  margin-top: 10px;
   font-size: 14px;
 }
 
-/* INVITE */
-.invite {
-  padding: 60px 20px;
+.date {
+  margin-top: 20px;
+  color: #c59d5f;
 }
 
-.date h1 {
-  font-size: 50px;
-  margin: 0;
+/* CARDS */
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.highlight {
+  border: 2px solid #c59d5f;
 }
 
 /* VENUE */
 .venue {
   background: #fff;
-  padding: 60px 20px;
+  padding: 50px 20px;
 }
 
 .venue a {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 10px 20px;
-  border: 1px solid #c8a97e;
+  border: 1px solid #c59d5f;
   text-decoration: none;
   color: #333;
 }
 
 .venue a:hover {
-  background: #c8a97e;
+  background: #c59d5f;
   color: white;
 }
 
-/* EVENT */
-.event {
-  padding: 60px 20px;
+/* PRE */
+.pre {
+  padding: 50px 20px;
 }
 
 /* CONTACT */
 .contact {
-  padding: 80px 20px;
+  padding: 50px 20px;
+  font-size: 14px;
 }
 
-.circle {
-  border: 2px solid #c8a97e;
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* FLORAL BOTTOM */
+.bottom-floral {
+  background: url('https://i.ibb.co/7QpKsCX/floral.png') no-repeat bottom center;
+  background-size: contain;
+  height: 180px;
 }
 
 /* MOBILE */
 @media(max-width:768px){
-  .floral-circle {
-    width: 200px;
-    height: 200px;
+  .names {
+    font-size: 40px;
   }
 }
