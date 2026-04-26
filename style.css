@@ -102,9 +102,6 @@ background-size: contain;
   height: 180px;
 }
 
-/* MOBILE */
-@media(max-width:768px){
-  .names {
-    font-size: 40px;
+
   }
 }
